@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.birthday-message {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px #ff69b4;
+    margin-top: 20px;
+}
+
+/* Cake */
+.cake {
+    width: 300px;
+    margin-top: 20px;
+    animation: float 3s infinite ease-in-out alternate;
+}
+
+/* Floating Animation */
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-15px); }
+}
+
+/* Waving Teddy */
+.teddy {
+    width: 150px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    animation: wave 1.5s infinite ease-in-out;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Bouncing Clutches */
+.clutch, .popper {
+    width: 80px;
+    position: absolute;
+    animation: bounce 3s infinite linear alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-200px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Party Poppers */
+.popper {
+    cursor: pointer;
+}
+
+/* Love Notes */
+.love-note {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    background: rgba(255, 20, 147, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: fade 4s infinite;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Cheesy Message Button */
+.cheesy-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background: pink;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.cheesy-btn:hover {
+    background: red;
+    color: white;
+}
